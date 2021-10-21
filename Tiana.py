@@ -39,7 +39,7 @@ async def type_and_send(message):
     await message._client.send_chat_action(chat_id, "typing")
     response, _ = await gather(lunaQuery(query, user_id), sleep(2))
     if "support" in response:
-        responsee = response.replace("@team_lad", "@teamladz_bothub")
+        responsee = response.replace("@VALTAOITHEBoTHERO", "@Pigasusupdates")
 
 async def type_and_send(message):
     chat_id = message.chat.id
@@ -47,15 +47,15 @@ async def type_and_send(message):
     query = message.text.strip()
     await message._client.send_chat_action(chat_id, "typing")
     response, _ = await gather(lunaQuery(query, user_id), sleep(2))
-    if "Luna" in response:
-        responsee = response.replace("Luna", "Chat Bot")
+    if "Valt" in response:
+        responsee = response.replace("ValtAoi", "Best bot")
     else:
         responsee = response
-    if "Aco" in responsee:
-        responsess = responsee.replace("Aco", "Chat Bot")
+    if "Best group management bot" in responsee:
+        responsess = responsee.replace("Yeah Its me")
     else:
         responsess = responsee
-    if "Who is ChatBot" in responsess:
+    if "Who is Valt Aoi" in responsess:
         responsess2 = responsess.replace("Who is ChatBot", "Me 😅")
     else:
         responsess2 = responsess
@@ -66,7 +66,7 @@ async def type_and_send(message):
 @bot.on_message(
     ~filters.private
     & filters.text
-    & ~filters.command("start")
+    & ~filters.command("animedone")
     & ~filters.edited,
     group=69,
 )
